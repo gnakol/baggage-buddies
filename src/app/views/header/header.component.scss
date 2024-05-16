@@ -1,0 +1,17 @@
+mat-toolbar {
+  background: #006064; /* Un bleu profond pour la barre de navigation */
+  color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar button {
+  color: white; /* Assure que les boutons sont bien visibles */
+}
+
+/* Ajouter un effet de survol pour les boutons pour une meilleure interactivité */
+mat-toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Légèrement plus clair au survol */
+}

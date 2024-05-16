@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleDrawer()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/home">Home</button>
+  <button mat-button routerLink="/admin/profile">Profile</button>
+  <button (click)="logout()" mat-raised-button color="warn" routerLink="/login">Logout</button>
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="over" opened="false">
+    <mat-nav-list>
+      <mat-list-item routerLink="/admin/dashboard">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+      </mat-list-item>
+      <mat-list-item routerLink="/admin/users">
+        <mat-icon>people</mat-icon>
+        All Users
+      </mat-list-item>
+      <mat-list-item routerLink="/dashboard/announcement">
+        <mat-icon>announcement</mat-icon>
+        Annonces
+      </mat-list-item>
+      <mat-list-item routerLink="/admin/payments">
+        <mat-icon>payment</mat-icon>
+        Payments
+      </mat-list-item>
+      <mat-list-item routerLink="/admin/reservations">
+        <mat-icon>book_online</mat-icon>
+        Reservations
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div style="min-height: 600px;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

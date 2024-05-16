@@ -1,0 +1,45 @@
+.welcome-message {
+  background-color: #0A2E36;  /* Bleu foncé */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-card {
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.example-header-image {
+  background-image: url('/assets/images/home.webp'); /* Ajouter une vraie image */
+  background-size: cover;
+  background-position: center; /* Centre l'image dans le conteneur */
+  /*height: 60vh;*/
+}
+
+mat-toolbar {
+  background: #006064; /* Un bleu plus profond pour la barre de navigation */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-card img {
+  width: 100%; /* Utilise toute la largeur du conteneur */
+  max-height: 60vh; /* Ne dépasse pas 60% de la hauteur de la fenêtre d'affichage */
+  object-fit: cover; /* Couvre la zone assignée sans déformer l'image */
+}
+
+.mat-card {
+  background: rgba(255, 255, 255, 0.8); /* Blanc avec transparence */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
